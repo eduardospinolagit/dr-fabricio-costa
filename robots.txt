@@ -1,0 +1,4 @@
+# DOMÍNIO: substituir "drfabricocosta.com.br" pelo domínio real quando definido
+User-agent: *
+Allow: /
+Sitemap: https://drfabricocosta.com.br/sitemap.xml
