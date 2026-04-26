@@ -837,7 +837,7 @@ p  { font-size: 1rem; color: var(--gray-dark); line-height: 1.75; }
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr 1.5fr 1fr;
   gap: 48px;
   margin-bottom: 48px;
 }
@@ -889,6 +889,46 @@ p  { font-size: 1rem; color: var(--gray-dark); line-height: 1.75; }
   font-size: .82rem;
 }
 .footer-bottom a { color: var(--red); }
+
+/* ── Footer accordion (mobile-only) ── */
+.footer-col-toggle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  font-family: var(--ff-head);
+  font-size: .88rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: 0 0 20px;
+  background: none;
+  border: none;
+  cursor: default;
+  text-align: left;
+}
+.footer-chevron {
+  display: none;
+  width: 14px; height: 14px;
+  stroke: rgba(255,255,255,.5);
+  fill: none;
+  flex-shrink: 0;
+  transition: transform .3s ease;
+}
+.footer-links-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 16px;
+}
+@media (max-width: 768px) {
+  .footer-col-toggle { cursor: pointer; touch-action: manipulation; }
+  .footer-chevron { display: block; }
+  .footer-col-toggle[aria-expanded="false"] .footer-chevron { transform: rotate(-90deg); }
+  .footer-col-body { overflow: hidden; max-height: 0; transition: max-height .35s ease; }
+  .footer-col-body.open { max-height: 500px; }
+  .footer-links-2col { grid-template-columns: 1fr; }
+}
 
 /* ── WhatsApp Float ── */
 .whatsapp-float {

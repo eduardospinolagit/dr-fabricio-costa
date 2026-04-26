@@ -70,6 +70,41 @@ if (fadeEls.length && 'IntersectionObserver' in window) {
   fadeEls.forEach(el => el.classList.add('visible'));
 }
 
+/* ── Footer accordion (mobile-only) ── */
+(function () {
+  var toggles = document.querySelectorAll('.footer-col-toggle');
+  if (!toggles.length) return;
+
+  function isMobile() { return window.innerWidth <= 768; }
+
+  function initState() {
+    toggles.forEach(function (btn) {
+      var body = btn.nextElementSibling;
+      if (!body) return;
+      if (isMobile()) {
+        btn.setAttribute('aria-expanded', 'false');
+        body.classList.remove('open');
+      } else {
+        btn.setAttribute('aria-expanded', 'true');
+        body.classList.add('open');
+      }
+    });
+  }
+
+  toggles.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      if (!isMobile()) return;
+      var isOpen = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!isOpen));
+      var body = btn.nextElementSibling;
+      if (body) body.classList.toggle('open', !isOpen);
+    });
+  });
+
+  initState();
+  window.addEventListener('resize', initState, { passive: true });
+})();
+
 /* ── FAQ accordion ── */
 document.querySelectorAll('.faq-question').forEach(btn => {
   btn.addEventListener('click', () => {
