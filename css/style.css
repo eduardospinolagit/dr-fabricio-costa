@@ -105,6 +105,7 @@ p  { font-size: 1rem; color: var(--gray-dark); line-height: 1.75; }
   cursor: pointer;
   border: 2px solid transparent;
   white-space: nowrap;
+  touch-action: manipulation;
 }
 .btn-primary {
   background: var(--red);
@@ -1289,7 +1290,7 @@ p  { font-size: 1rem; color: var(--gray-dark); line-height: 1.75; }
   }
   .nav-mobile a:hover,
   .nav-mobile a.active { color: var(--red); background: var(--red-light); }
-  .nav-mobile .btn   { margin-top: 8px; justify-content: center; }
+  .nav-mobile .btn   { margin-top: 8px; justify-content: center; width: 100%; }
 
   .hero {
     grid-template-columns: 1fr;
@@ -1373,6 +1374,84 @@ p  { font-size: 1rem; color: var(--gray-dark); line-height: 1.75; }
   .services-grid,
   .testimonials-grid { grid-template-columns: 1fr; }
   .hero-cta-group .btn { width: 100%; justify-content: center; min-height: 48px; }
+}
+
+/* ── Mobile refinements ── */
+
+@media (max-width: 1024px) {
+  .about-acu-inner,
+  .about-doc-inner { gap: 48px; }
+  .about-bio       { gap: 48px; }
+}
+
+@media (max-width: 768px) {
+  /* Hero — corrige margin-left que causava overflow horizontal */
+  .hero-panel-content { margin-left: 0; }
+  .hero-title         { font-size: clamp(2rem, 8vw, 2.8rem); line-height: 1.15; }
+  .hero-info-badge    { flex-wrap: wrap; justify-content: center; gap: 8px; font-size: .76rem; }
+  .hero-desc          { max-width: 100%; }
+
+  /* Seções */
+  .section-header { margin-bottom: 40px; }
+
+  /* Seções two-col empilhadas */
+  .about-acu-inner,
+  .about-doc-inner { gap: 40px; }
+  .about-bio       { gap: 40px; }
+  .about-doc-img-wrap { max-width: 340px; margin: 0 auto; }
+
+  /* Service detail */
+  .service-detail { padding: 40px 0; gap: 32px; }
+
+  /* Contato */
+  .contact-form-wrap { padding: 24px; border-radius: var(--radius-lg); }
+
+  /* Cursos */
+  .courses-hero-cards        { margin-bottom: 40px; }
+  .course-card-featured-top  { padding: 28px 24px; }
+  .course-card-featured-body { padding: 24px; }
+
+  /* Footer */
+  .footer-grid { gap: 24px; }
+
+  /* Page hero */
+  .page-hero   { padding: 104px 0 56px; }
+  .page-hero p { font-size: 1rem; }
+
+  /* CTA banner */
+  .cta-banner   { padding: 56px 0; }
+  .cta-banner p { font-size: 1rem; }
+
+  /* Logo no nav */
+  .nav-logo-img { height: 44px; }
+
+  /* Botão WhatsApp flutuante */
+  .whatsapp-float { bottom: 20px; right: 20px; width: 52px; height: 52px; }
+}
+
+@media (max-width: 480px) {
+  .hero-title      { font-size: clamp(1.8rem, 9vw, 2.4rem); }
+  .hero-info-badge { font-size: .7rem; padding: 6px 12px; }
+  .hero-stats      { gap: 4px; }
+
+  .section-header { margin-bottom: 28px; }
+
+  .page-hero { padding: 96px 0 40px; }
+
+  .footer { padding: 48px 0 24px; }
+
+  .contact-form-wrap { padding: 20px 16px; }
+
+  .service-detail { padding: 28px 0; gap: 20px; }
+
+  /* Card flutuante da seção acupuntura — esconde para evitar overflow */
+  .about-acu-card { display: none; }
+
+  .cta-banner { padding: 48px 0; }
+
+  /* Cursos */
+  .course-card-featured-top  { padding: 24px 20px; }
+  .course-card-featured-body { padding: 20px; }
 }
 
 /* ── Reduced motion ── */
