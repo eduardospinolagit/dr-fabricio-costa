@@ -16,15 +16,14 @@
   <header class="header" role="banner">
     <nav class="nav container" aria-label="Navegação principal">
       <a href="index.html" class="nav-logo" aria-label="Dr. Fabrício Costa, Início">
-        <div class="nav-logo-text">
-          <strong>Dr. Fabrício Costa</strong>
-                  </div>
+        <img src="img/logo.png" alt="Dr. Fabrício Costa" class="nav-logo-img">
       </a>
       <ul class="nav-links" role="list">
         <li><a href="index.html">Início</a></li>
         <li><a href="sobre.html">Sobre</a></li>
         <li><a href="servicos.html" class="active">Serviços</a></li>
         <li><a href="cursos.html">Cursos & Mentoria</a></li>
+        <li><a href="faq.html">FAQ</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
       <a href="contato.html" class="btn btn-primary nav-cta">Agendar Consulta</a>
@@ -37,6 +36,7 @@
       <a href="sobre.html">Sobre</a>
       <a href="servicos.html" class="active">Serviços</a>
       <a href="cursos.html">Cursos & Mentoria</a>
+      <a href="faq.html">FAQ</a>
       <a href="contato.html">Contato</a>
       <a href="contato.html" class="btn btn-primary">Agendar Consulta</a>
     </nav>
@@ -48,19 +48,104 @@
     <section class="page-hero" aria-labelledby="page-title">
       <div class="container">
         <span class="tag">Tratamentos</span>
-        <h1 id="page-title">Serviços de Acupuntura</h1>
-        <p>Protocolos clínicos especializados para tratar a causa raiz da sua dor e desequilíbrio, de forma natural e eficaz.</p>
+        <h1 id="page-title">Descubra o tratamento ideal<br>para você</h1>
+        <p>Protocolos clínicos especializados para tratar a causa raiz da sua dor e desequilíbrio, com resultados consistentes e duradouros.</p>
       </div>
     </section>
 
-    <!-- Serviços detalhados -->
-    <section class="section" aria-label="Lista de tratamentos">
+    <!-- Serviços -->
+    <section class="section" aria-label="Lista de serviços">
       <div class="container">
+        <div class="srv-grid">
+
+          <article class="srv-card fade-in">
+            <div class="srv-card-icon" aria-hidden="true">
+              <img src="icons/fisioterapia.png" alt="" width="32" height="32">
+            </div>
+            <h3>Fisioterapia</h3>
+            <p>Avaliação e reabilitação funcional do movimento humano, com foco na recuperação de lesões musculoesqueléticas e prevenção de disfunções.</p>
+          </article>
+
+          <article class="srv-card fade-in" data-delay="60">
+            <div class="srv-card-icon" aria-hidden="true">
+              <img src="icons/acupuntura.png" alt="" width="32" height="32">
+            </div>
+            <h3>Acupuntura</h3>
+            <p>Técnica milenar da medicina tradicional chinesa que utiliza agulhas ultrafinas para reequilibrar o organismo e aliviar dores de forma natural e eficaz.</p>
+          </article>
+
+          <article class="srv-card fade-in" data-delay="120">
+            <div class="srv-card-icon" aria-hidden="true">
+              <img src="icons/orelha.png" alt="" width="32" height="32">
+            </div>
+            <h3>Auriculoterapia</h3>
+            <p>Estimulação de pontos reflexos na orelha que se conectam a órgãos e sistemas do corpo, promovendo equilíbrio, alívio da dor e bem-estar geral.</p>
+          </article>
+
+          <article class="srv-card fade-in" data-delay="180">
+            <div class="srv-card-icon" aria-hidden="true">
+              <img src="icons/ventosaterapia.png" alt="" width="32" height="32">
+            </div>
+            <h3>Ventosaterapia</h3>
+            <p>Aplicação de ventosas para promover a circulação local, aliviar tensões musculares profundas e desobstruir o fluxo de energia no organismo.</p>
+          </article>
+
+          <article class="srv-card fade-in" data-delay="240">
+            <div class="srv-card-icon" aria-hidden="true">
+              <img src="icons/aquecer.png" alt="" width="32" height="32">
+            </div>
+            <h3>Moxabustão</h3>
+            <p>Técnica que utiliza o calor da erva artemísia para estimular pontos de acupuntura, ativando a circulação, fortalecendo o organismo e tratando condições crônicas.</p>
+          </article>
+
+          <article class="srv-card fade-in" data-delay="300">
+            <div class="srv-card-icon" aria-hidden="true">
+              <img src="icons/bola-de-massagem.png" alt="" width="32" height="32">
+            </div>
+            <h3>Liberação Miofascial</h3>
+            <p>Técnica manual que trabalha a fáscia muscular para aliviar tensões profundas, dores crônicas e limitações de movimento com resultados duradouros.</p>
+          </article>
+
+          <article class="srv-card fade-in" data-delay="360">
+            <div class="srv-card-icon" aria-hidden="true">
+              <img src="icons/curativo.png" alt="" width="32" height="32">
+            </div>
+            <h3>Bandagem Elástica Funcional</h3>
+            <p>Aplicação de kinesio tape para suporte articular, melhora da postura, redução de edemas e aceleração da recuperação de lesões esportivas e ocupacionais.</p>
+          </article>
+
+          <article class="srv-card fade-in" data-delay="420">
+            <div class="srv-card-icon" aria-hidden="true">
+              <img src="icons/quiropraxia.png" alt="" width="32" height="32">
+            </div>
+            <h3>Quiropraxia</h3>
+            <p>Ajustes articulares que corrigem subluxações vertebrais, aliviam dores e restauram a função normal do sistema musculoesquelético sem uso de medicamentos.</p>
+          </article>
+
+          <article class="srv-card fade-in" data-delay="480">
+            <div class="srv-card-icon" aria-hidden="true">
+              <img src="icons/ortopedico.png" alt="" width="32" height="32">
+            </div>
+            <h3>Fisioterapia Pós-Operatória em Ortopedia</h3>
+            <p>Reabilitação especializada para pacientes em recuperação de cirurgias ortopédicas, com protocolos seguros e progressivos que garantem retorno funcional pleno.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Condições Tratadas -->
+    <section class="section" style="background:var(--off-white);" aria-labelledby="cond-title">
+      <div class="container">
+        <header class="section-header center fade-in">
+          <span class="tag">Condições Tratadas</span>
+          <h2 id="cond-title">O que podemos tratar</h2>
+          <p>Conheça as principais condições tratadas com os protocolos clínicos do Dr. Fabrício Costa.</p>
+        </header>
 
         <!-- 1. Hérnia de Disco -->
         <article class="service-detail fade-in" aria-labelledby="srv-1">
           <div class="service-detail-img">
-            <!-- Substitua por: <img src="img/hernia-disco.jpg" alt="Tratamento de hérnia de disco com acupuntura"> -->
             <img src="https://images.pexels.com/photos/7298429/pexels-photo-7298429.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Homem com dor nas costas, tratamento de hérnia de disco com acupuntura" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
           </div>
           <div class="service-detail-content">
@@ -69,24 +154,11 @@
             <p>A hérnia de disco é uma das principais causas de dor lombar e cervical. Com a acupuntura, é possível reduzir a inflamação, aliviar a compressão nervosa e recuperar a mobilidade, sem cirurgia e sem medicamentos.</p>
             <p>O protocolo do Dr. Fabrício combina pontos específicos da coluna e extremidades para desbloquear o fluxo energético, reduzir a dor e acelerar a regeneração tecidual.</p>
             <ul class="service-detail-bullets" aria-label="Benefícios do tratamento">
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Alívio da dor desde as primeiras sessões</span>
-              </li>
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Redução da inflamação e edema</span>
-              </li>
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Melhora da mobilidade e qualidade de vida</span>
-              </li>
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Alternativa não-invasiva à cirurgia</span>
-              </li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Alívio da dor desde as primeiras sessões</span></li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Redução da inflamação e edema</span></li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Melhora da mobilidade e qualidade de vida</span></li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Alternativa não-invasiva à cirurgia</span></li>
             </ul>
-            <a href="https://wa.me/5547992232316?text=Olá%2C%20quero%20agendar%20uma%20consulta%20para%20Hérnia%20de%20Disco!" class="btn btn-primary" target="_blank" rel="noopener">Agendar para este tratamento</a>
           </div>
         </article>
 
@@ -101,24 +173,11 @@
             <p>A acupuntura atua diretamente no sistema nervoso autônomo, regulando a produção de neurotransmissores como serotonina e dopamina. O resultado é uma redução significativa dos sintomas de ansiedade, depressão e estresse crônico.</p>
             <p>Estudos científicos comprovam a eficácia da acupuntura como terapia complementar para transtornos emocionais, com efeitos comparáveis aos de medicamentos antidepressivos, mas sem os efeitos colaterais.</p>
             <ul class="service-detail-bullets">
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Redução da ansiedade e dos ataques de pânico</span>
-              </li>
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Melhora do humor e da disposição</span>
-              </li>
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Regulação do sono e do ritmo circadiano</span>
-              </li>
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Diminuição do cortisol (hormônio do estresse)</span>
-              </li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Redução da ansiedade e dos ataques de pânico</span></li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Melhora do humor e da disposição</span></li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Regulação do sono e do ritmo circadiano</span></li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Diminuição do cortisol (hormônio do estresse)</span></li>
             </ul>
-            <a href="https://wa.me/5547992232316?text=Olá%2C%20quero%20agendar%20uma%20consulta%20para%20ansiedade!" class="btn btn-primary" target="_blank" rel="noopener">Agendar para este tratamento</a>
           </div>
         </article>
 
@@ -132,24 +191,11 @@
             <h2 id="srv-3">Dor nos Joelhos e Artrose</h2>
             <p>A dor nos joelhos afeta profundamente a mobilidade e a qualidade de vida. A acupuntura é altamente eficaz para tratar artrose, condromalácia patelar, síndrome femoropatelar e outras condições articulares, promovendo a regeneração da cartilagem e o alívio imediato da dor.</p>
             <ul class="service-detail-bullets">
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Técnica avançada com resultados imediatos</span>
-              </li>
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Estimula a regeneração da cartilagem</span>
-              </li>
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Recuperação da amplitude de movimento</span>
-              </li>
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Tratamento para artrose, condromalácia e lesões</span>
-              </li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Técnica avançada com resultados imediatos</span></li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Estimula a regeneração da cartilagem</span></li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Recuperação da amplitude de movimento</span></li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Tratamento para artrose, condromalácia e lesões</span></li>
             </ul>
-            <a href="https://wa.me/5547992232316?text=Olá%2C%20quero%20agendar%20uma%20consulta%20para%20dor%20nos%20joelhos!" class="btn btn-primary" target="_blank" rel="noopener">Agendar para este tratamento</a>
           </div>
         </article>
 
@@ -162,26 +208,12 @@
             <span class="tag">Pés e Tornozelos</span>
             <h2 id="srv-4">Fasceíte Plantar</h2>
             <p>A fasceíte plantar causa uma dor intensa no calcanhar, especialmente nos primeiros passos pela manhã. A acupuntura trata diretamente o local inflamado com agulhas que estimulam a circulação local, reduzem a inflamação e aceleram a regeneração do tecido fascial.</p>
-            <p>A protocolo a avançado com resultados comprovados desde as primeiras sessões.</p>
             <ul class="service-detail-bullets">
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Alívio da dor no calcanhar e arco plantar</span>
-              </li>
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Redução da inflamação tecidual</span>
-              </li>
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Regeneração acelerada da fáscia plantar</span>
-              </li>
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Resultados a partir da primeira sessão</span>
-              </li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Alívio da dor no calcanhar e arco plantar</span></li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Redução da inflamação tecidual</span></li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Regeneração acelerada da fáscia plantar</span></li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Resultados a partir da primeira sessão</span></li>
             </ul>
-            <a href="https://wa.me/5547992232316?text=Olá%2C%20quero%20agendar%20uma%20consulta%20para%20Fasceíte%20Plantar!" class="btn btn-primary" target="_blank" rel="noopener">Agendar para este tratamento</a>
           </div>
         </article>
 
@@ -196,24 +228,11 @@
             <p>Tendinite e bursite são processos inflamatórios que causam dor intensa e limitam os movimentos. A acupuntura age reduzindo a inflamação, melhorando a circulação local e estimulando a produção de colágeno para a reparação dos tecidos.</p>
             <p>Tratamento eficaz para tendinite no ombro, cotovelo (cotovelo de tenista), punho, joelho e tornozelo.</p>
             <ul class="service-detail-bullets">
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Resultados terapêuticos imediatos</span>
-              </li>
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Tratamento sem cirurgia ou corticoides</span>
-              </li>
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Estimula a regeneração do colágeno</span>
-              </li>
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Recuperação da amplitude de movimento</span>
-              </li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Resultados terapêuticos imediatos</span></li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Tratamento sem cirurgia ou corticoides</span></li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Estimula a regeneração do colágeno</span></li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Recuperação da amplitude de movimento</span></li>
             </ul>
-            <a href="https://wa.me/5547992232316?text=Olá%2C%20quero%20agendar%20uma%20consulta%20para%20tendinite!" class="btn btn-primary" target="_blank" rel="noopener">Agendar para este tratamento</a>
           </div>
         </article>
 
@@ -227,85 +246,14 @@
             <h2 id="srv-6">Insônia e Estresse Crônico</h2>
             <p>O estresse crônico e a insônia afetam profundamente a saúde física e mental. A acupuntura regula o sistema nervoso autônomo, equilibra os hormônios do estresse e promove o relaxamento profundo necessário para um sono restaurador.</p>
             <ul class="service-detail-bullets">
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Regulação do ciclo sono-vigília</span>
-              </li>
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Redução do cortisol e adrenalina</span>
-              </li>
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Aumento da produção de melatonina</span>
-              </li>
-              <li class="service-bullet">
-                <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Relaxamento profundo durante a sessão</span>
-              </li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Regulação do ciclo sono-vigília</span></li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Redução do cortisol e adrenalina</span></li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Aumento da produção de melatonina</span></li>
+              <li class="service-bullet"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Relaxamento profundo durante a sessão</span></li>
             </ul>
-            <a href="https://wa.me/5547992232316?text=Olá%2C%20quero%20agendar%20uma%20consulta%20para%20insônia!" class="btn btn-primary" target="_blank" rel="noopener">Agendar para este tratamento</a>
           </div>
         </article>
 
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section" style="background:var(--off-white);" aria-labelledby="faq-title">
-      <div class="container">
-        <header class="section-header center fade-in">
-          <span class="tag">Dúvidas</span>
-          <h2 id="faq-title">Perguntas frequentes</h2>
-          <p>Tire suas principais dúvidas sobre a acupuntura antes de agendar sua consulta.</p>
-        </header>
-        <div class="faq-list" role="list">
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false">
-              A acupuntura dói?
-              <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-            </button>
-            <div class="faq-answer" aria-hidden="true">
-              <p class="faq-answer-inner">As agulhas de acupuntura são extremamente finas, muito mais finas que as agulhas de injeção. A maioria dos pacientes relata sentir apenas uma sensação de formigamento ou peso leve no local da agulha. Muitas pessoas adormecem durante a sessão!</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              Quantas sessões são necessárias?
-              <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-            </button>
-            <div class="faq-answer" aria-hidden="true">
-              <p class="faq-answer-inner">O número de sessões varia conforme a condição e o paciente. Casos agudos podem se resolver em 3 a 6 sessões. Condições crônicas geralmente requerem entre 10 e 15 sessões. O Dr. Fabrício avalia cada caso individualmente e define o protocolo ideal na primeira consulta.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              A acupuntura é segura?
-              <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-            </button>
-            <div class="faq-answer" aria-hidden="true">
-              <p class="faq-answer-inner">Sim, a acupuntura é considerada segura quando realizada por profissional qualificado. Utilizamos agulhas descartáveis e estéreis de uso único. É reconhecida pela OMS e pelo Conselho Federal de Medicina como prática segura e eficaz.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              Quanto tempo dura cada sessão?
-              <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-            </button>
-            <div class="faq-answer" aria-hidden="true">
-              <p class="faq-answer-inner">A primeira consulta dura aproximadamente 60 minutos, pois inclui a anamnese completa. As sessões subsequentes têm duração média de 40 a 50 minutos. As agulhas ficam inseridas por cerca de 20 a 30 minutos durante cada sessão.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              A acupuntura tem contraindicações?
-              <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-            </button>
-            <div class="faq-answer" aria-hidden="true">
-              <p class="faq-answer-inner">A acupuntura é segura para a maioria das pessoas. Algumas situações requerem cuidados especiais, como gravidez, uso de anticoagulantes ou marca-passo. Por isso, é essencial informar o Dr. Fabrício sobre seu histórico de saúde completo na primeira consulta.</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -329,7 +277,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="nav-logo" aria-label="Dr. Fabrício Costa, Início">
-            <div class="nav-logo-text"><strong style="color:#fff;">Dr. Fabrício Costa</strong><span>Acupuntura · Brusque/SC</span></div>
+            <img src="img/logo.png" alt="Dr. Fabrício Costa" class="nav-logo-img">
           </a>
           <p>Tratamentos com acupuntura para aliviar a dor, reduzir o estresse e restaurar o equilíbrio do seu corpo.</p>
           <div class="footer-social">
@@ -337,13 +285,13 @@
             <a href="https://wa.me/5547992232316" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
           </div>
         </div>
-        <div><h4>Navegação</h4><ul class="footer-links"><li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre o Dr. Fabrício</a></li><li><a href="servicos.html">Serviços</a></li><li><a href="cursos.html">Cursos & Mentoria</a></li><li><a href="contato.html">Contato</a></li></ul></div>
+        <div><h4>Navegação</h4><ul class="footer-links"><li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre o Dr. Fabrício</a></li><li><a href="servicos.html">Serviços</a></li><li><a href="cursos.html">Cursos & Mentoria</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contato.html">Contato</a></li></ul></div>
         <div><h4>Tratamentos</h4><ul class="footer-links"><li><a href="servicos.html">Hérnia de Disco</a></li><li><a href="servicos.html">Ansiedade e Depressão</a></li><li><a href="servicos.html">Dor nos Joelhos</a></li><li><a href="servicos.html">Fasceíte Plantar</a></li><li><a href="servicos.html">Tendinite e Bursite</a></li></ul></div>
-        <div><h4>Contato</h4><address class="footer-contact" style="font-style:normal;"><div class="footer-contact-item"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>(47) 99223-2316</span></div><div class="footer-contact-item"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>R. Maximiliano Furbringer, 202<br>Jardim Maluche, Brusque/SC</span></div></address></div>
+        <div><h4>Contato</h4><address class="footer-contact" style="font-style:normal;"><div class="footer-contact-item"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>(47) 99223-2316<br>(47) 99161-1766 (Clínica)</span></div><div class="footer-contact-item"><svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>R. Sete de Setembro, 585 - Sala 04<br>Clínica Médica Santa Rita<br>Santa Rita, Brusque/SC</span></div></address></div>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2026 Dr. Fabrício Costa. Todos os direitos reservados.</p>
-        <p>Desenvolvido por <a href="#" target="_blank" rel="noopener">Sano Lab</a></p>
+        <p>Desenvolvido por <a href="https://sanolab.com.br" target="_blank" rel="noopener">Sano Lab</a></p>
       </div>
     </div>
   </footer>

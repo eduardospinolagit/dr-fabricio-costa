@@ -108,6 +108,66 @@ if (form) {
   });
 }
 
+/* ── Carrossel de depoimentos ── */
+(function () {
+  var viewport = document.querySelector('.gr-carousel-viewport');
+  var track    = document.querySelector('.gr-carousel-track');
+  var prevBtn  = document.querySelector('.gr-prev');
+  var nextBtn  = document.querySelector('.gr-next');
+  var dotsWrap = document.querySelector('.gr-carousel-dots');
+  if (!track || !viewport || !prevBtn || !nextBtn || !dotsWrap) return;
+
+  var cards   = Array.from(track.querySelectorAll('.gr-card'));
+  var GAP     = 20;
+  var current = 0;
+
+  function getVisible() {
+    var vw = viewport.offsetWidth;
+    if (vw < 640) return 1;
+    if (vw < 960) return 2;
+    return 3;
+  }
+
+  function goTo(idx) {
+    var visible = getVisible();
+    var max     = Math.max(0, cards.length - visible);
+    current     = Math.max(0, Math.min(idx, max));
+    var cardW   = cards[0].offsetWidth;
+    track.style.transform = 'translateX(-' + (current * (cardW + GAP)) + 'px)';
+    dotsWrap.querySelectorAll('.gr-dot').forEach(function (d, i) {
+      d.classList.toggle('active', i === current);
+    });
+    prevBtn.disabled = current === 0;
+    nextBtn.disabled = current >= max;
+  }
+
+  function setup() {
+    var visible = getVisible();
+    var vw      = viewport.offsetWidth;
+    if (vw === 0) return;
+    var cardW = Math.floor((vw - GAP * (visible - 1)) / visible);
+    cards.forEach(function (c) { c.style.width = cardW + 'px'; });
+
+    var total = Math.max(1, cards.length - visible + 1);
+    dotsWrap.innerHTML = '';
+    for (var i = 0; i < total; i++) {
+      (function (idx) {
+        var dot = document.createElement('button');
+        dot.className = 'gr-dot' + (idx === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Depoimento ' + (idx + 1));
+        dot.addEventListener('click', function () { goTo(idx); });
+        dotsWrap.appendChild(dot);
+      })(i);
+    }
+    goTo(Math.min(current, Math.max(0, cards.length - visible)));
+  }
+
+  prevBtn.addEventListener('click', function () { goTo(current - 1); });
+  nextBtn.addEventListener('click', function () { goTo(current + 1); });
+  window.addEventListener('resize', setup, { passive: true });
+  setTimeout(setup, 0);
+})();
+
 /* ── Animação toggle hamburger ── */
 if (navToggle) {
   const spans = navToggle.querySelectorAll('span');

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -16,9 +16,7 @@
   <header class="header" role="banner">
     <nav class="nav container" aria-label="Navegação principal">
       <a href="index.html" class="nav-logo" aria-label="Dr. Fabrício Costa, Início">
-<div class="nav-logo-text">
-          <strong>Dr. Fabrício Costa</strong>
-        </div>
+        <img src="img/logo.png" alt="Dr. Fabrício Costa" class="nav-logo-img">
       </a>
 
       <ul class="nav-links" role="list">
@@ -26,6 +24,7 @@
         <li><a href="sobre.html">Sobre</a></li>
         <li><a href="servicos.html">Serviços</a></li>
         <li><a href="cursos.html">Cursos & Mentoria</a></li>
+        <li><a href="faq.html">FAQ</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
 
@@ -41,6 +40,7 @@
       <a href="sobre.html">Sobre</a>
       <a href="servicos.html">Serviços</a>
       <a href="cursos.html">Cursos & Mentoria</a>
+      <a href="faq.html">FAQ</a>
       <a href="contato.html">Contato</a>
       <a href="contato.html" class="btn btn-primary">Agendar Consulta</a>
     </nav>
@@ -50,60 +50,73 @@
 
     <!-- Hero -->
     <section class="hero" aria-labelledby="hero-title">
-      <div class="container">
-        <div class="hero-inner">
-          <div class="hero-content fade-in">
-            <h1 class="hero-title" id="hero-title">
-              Recupere seu<br>
-              <em>bem-estar</em>
-              com acupuntura
-            </h1>
-            <p class="hero-desc">
-              Tratamentos especializados que aliviam a dor, reduzem o estresse e restabelecem o equilíbrio do seu corpo, de forma natural e eficaz.
-            </p>
-            <div class="hero-actions">
-              <a href="contato.html" class="btn btn-primary btn-lg">Agendar Consulta</a>
-              <a href="servicos.html" class="btn btn-outline">Ver Tratamentos</a>
+
+      <div class="hero-panel">
+        <div class="hero-panel-content fade-in">
+
+          <div class="hero-info-badge">
+            <span class="hero-info-badge-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Brusque / SC
+            </span>
+            <span class="hero-info-badge-sep"></span>
+            <span class="hero-info-badge-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              De Segunda à Sexta, 8h às 18h
+            </span>
+          </div>
+
+          <h1 class="hero-title" id="hero-title">
+            Chega de conviver com a dor.
+            <em>Volte a fazer o que você ama sem limitações.</em>
+          </h1>
+
+          <p class="hero-desc">
+            Mais de 20 anos de experiência profissional. Tratamentos personalizados que atuam na causa da dor, proporcionando alívio já nas primeiras sessões.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="https://wa.me/5547992232316?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20agendar%20uma%20consulta%20de%20acupuntura." class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+              Agendar consulta pelo WhatsApp
+            </a>
+            <a href="servicos.html" class="btn btn-outline btn-lg">
+              Ver tratamentos
+            </a>
+          </div>
+
+          <div class="hero-stats" aria-label="Prova social do consultório">
+            <div class="hero-stat">
+              <strong>+15.000</strong>
+              <span>Pacientes atendidos</span>
             </div>
-            <div class="hero-stats" aria-label="Números do consultório">
-              <div class="hero-stat">
-                <strong>+2.000</strong>
-                <span>Pacientes atendidos</span>
-              </div>
-              <div class="hero-stat">
-                <strong>10+</strong>
-                <span>Anos de experiência</span>
-              </div>
-              <div class="hero-stat">
-                <strong>98%</strong>
-                <span>Índice de satisfação</span>
-              </div>
+            <div class="hero-stat-sep" aria-hidden="true"></div>
+            <div class="hero-stat">
+              <strong>+20 anos</strong>
+              <span>De experiência</span>
+            </div>
+            <div class="hero-stat-sep" aria-hidden="true"></div>
+            <div class="hero-stat">
+              <strong>98%</strong>
+              <span>De satisfação</span>
             </div>
           </div>
 
-          <div class="hero-image fade-in" data-delay="150">
-            <div class="hero-image-wrap">
-              <img src="img/dr-fabricio.jpg" alt="Dr. Fabrício Costa, acupunturista" loading="eager" style="width:100%;height:100%;object-fit:cover;object-position:top center;">
-            </div>
+        </div>
+      </div>
 
-            <div class="hero-chip hero-chip-1" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#C41230" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              <div>
-                <strong>Tratamento Natural</strong>
-                <small>Sem efeitos colaterais</small>
-              </div>
-            </div>
-
-            <div class="hero-chip hero-chip-2" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#C41230" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-              <div>
-                <strong>Brusque/SC</strong>
-                <small>Seg a Sex, 8h-18h</small>
-              </div>
-            </div>
+      <div class="hero-visual">
+        <img src="img/dr-fabricio.jpg" alt="Dr. Fabrício Costa, acupunturista em Brusque/SC" loading="eager">
+        <div class="hero-visual-badge" aria-hidden="true">
+          <div class="hero-visual-badge-icon">
+            <img src="img/oms-logo.png" alt="">
+          </div>
+          <div>
+            <strong>Reconhecido pela OMS</strong>
+            <span>Organização Mundial de Saúde</span>
           </div>
         </div>
       </div>
+
     </section>
 
     <!-- O que é Acupuntura -->
@@ -116,18 +129,18 @@
             </div>
             <div class="about-acu-card">
               <strong>OMS</strong>
-              <span>Reconhecida pela<br>Organização Mundial de Saúde</span>
+              <span>Reconhecida como tratamento eficaz<br>para mais de 40 condições de saúde</span>
             </div>
           </div>
 
           <div class="about-acu-content fade-in" data-delay="150">
-            <span class="tag">O que é</span>
-            <h2 id="acu-title">Acupuntura: ciência milenar a seu favor</h2>
+            <span class="tag">Por que funciona</span>
+            <h2 id="acu-title">Acupuntura: Um tratamento que age onde a dor começa</h2>
             <p>
-              A acupuntura é uma técnica terapêutica originária da Medicina Tradicional Chinesa com mais de 3.000 anos de história. Reconhecida pela Organização Mundial da Saúde (OMS), ela atua estimulando pontos específicos do corpo com agulhas finíssimas para restaurar o equilíbrio energético e promover a cura natural.
+              A acupuntura estimula o sistema nervoso a liberar substâncias naturais que aliviam a dor, reduzem a inflamação e relaxam o corpo. Atua na causa do problema, não apenas no sintoma, por isso os resultados são reais e duradouros.
             </p>
             <p>
-              No Brasil, é regulamentada pelo Conselho Federal de Medicina e amplamente utilizada como tratamento complementar para dezenas de condições de saúde.
+              Reconhecida pela Organização Mundial da Saúde como prática eficaz para diversas condições de saúde.
             </p>
             <div class="about-acu-points">
               <div class="about-acu-point">
@@ -144,8 +157,8 @@
                   <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                 </div>
                 <div>
-                  <h4>Resultados rápidos</h4>
-                  <p>Muitos pacientes relatam melhora significativa já nas primeiras sessões.</p>
+                  <h4>Melhora desde as primeiras sessões</h4>
+                  <p>A maioria dos pacientes relata redução da dor de 50 a 100% já na primeira sessão.</p>
                 </div>
               </div>
               <div class="about-acu-point">
@@ -153,8 +166,8 @@
                   <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
                 </div>
                 <div>
-                  <h4>Tratamento global</h4>
-                  <p>Trata a causa raiz do problema, não apenas os sintomas.</p>
+                  <h4>Trata a causa, não o sintoma</h4>
+                  <p>A acupuntura trata o paciente como um todo, atuando na raiz do problema e não apenas nos sintomas. Essa é a grande diferença em relação aos tratamentos convencionais.</p>
                 </div>
               </div>
             </div>
@@ -168,61 +181,64 @@
       <div class="container">
         <header class="section-header center fade-in">
           <span class="tag">Tratamentos</span>
-          <h2 id="services-title">O que tratamos com acupuntura</h2>
-          <p>Do alívio da dor ao equilíbrio emocional, conheça as condições que tratamos com protocolos especializados.</p>
+          <h2 id="services-title">Tratamentos para aliviar sua dor e recuperar sua qualidade de vida</h2>
+          <p>Do alívio da dor ao equilíbrio emocional, conheça as principais condições que tratamos com protocolos especializados.</p>
         </header>
 
         <div class="services-grid">
           <article class="service-card fade-in">
-            <div class="service-card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M3 18h18M3 6h18M3 12h18"/></svg>
+            <div class="service-card-icon">
+              <img src="icons/coluna-vertebral.png" alt="" width="32" height="32">
             </div>
-            <h3>Dor na Coluna e Hérnia de Disco</h3>
+            <h3>Dor na coluna ou hérnia de disco?</h3>
             <p>Protocolo avançado para dor lombar, cervical e hérnias de disco, com resultados desde a primeira sessão.</p>
           </article>
 
           <article class="service-card fade-in" data-delay="80">
-            <div class="service-card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            <div class="service-card-icon">
+              <img src="icons/cerebro.png" alt="" width="32" height="32">
             </div>
-            <h3>Ansiedade e Depressão</h3>
-            <p>Tratamento especializado que regula o sistema nervoso, reduz o cortisol e melhora o humor e o sono.</p>
+            <h3>Ansiedade, insônia ou depressão?</h3>
+            <p>Tratamento especializado que regula o sistema nervoso, reduz a ansiedade, reduz o cortisol e melhora o humor e o sono.</p>
           </article>
 
           <article class="service-card fade-in" data-delay="160">
-            <div class="service-card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5zm-5 0c-.83 0-1.5-.67-1.5-1.5v-5C8 2.67 8.67 2 9.5 2S11 2.67 11 3.5v5c0 .83-.67 1.5-1.5 1.5zm-5 3c-.83 0-1.5-.67-1.5-1.5v-3C3 7.67 3.67 7 4.5 7S6 7.67 6 8.5v3c0 .83-.67 1.5-1.5 1.5zm14 0c-.83 0-1.5-.67-1.5-1.5v-3c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v3c0 .83-.67 1.5-1.5 1.5zM12 20c-4.42 0-8-1.79-8-4v-3h16v3c0 2.21-3.58 4-8 4z"/></svg>
+            <div class="service-card-icon">
+              <img src="icons/joelho.png" alt="" width="32" height="32">
             </div>
-            <h3>Dor nos Joelhos e Articulações</h3>
+            <h3>Dor nos ombros ou nos joelhos?</h3>
             <p>Técnica avançada com resultados imediatos para artrose, tendinite e dores articulares diversas.</p>
           </article>
 
           <article class="service-card fade-in" data-delay="240">
-            <div class="service-card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M17 8C8 10 5.9 16.17 3.82 19.34M9.1 9.1c-.21 1.22-.37 3.01-.37 5.14M2 11l3.85 3.85M16 15l3.85-3.85M8 17c.29-1.77.89-3.44 1.8-4.89"/></svg>
+            <div class="service-card-icon">
+              <img src="icons/pe.png" alt="" width="32" height="32">
             </div>
-            <h3>Fasceíte Plantar</h3>
-            <p>Tratamento especializado para dor no calcanhar com agulhas que aceleram a regeneração tecidual.</p>
+            <h3>Dor nos pés ou fasceíte plantar?</h3>
+            <p>Tratamento especializado para dor no calcanhar e na planta dos pés com agulhas que aceleram a regeneração tecidual.</p>
           </article>
 
           <article class="service-card fade-in" data-delay="320">
-            <div class="service-card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            <div class="service-card-icon">
+              <img src="icons/tendinite.png" alt="" width="32" height="32">
             </div>
-            <h3>Tendinite e Bursite</h3>
+            <h3>Tendinite ou bursite?</h3>
             <p>Resultados terapêuticos imediatos para inflamações nos tendões e bursas, sem cirurgia.</p>
           </article>
 
           <article class="service-card fade-in" data-delay="400">
-            <div class="service-card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <div class="service-card-icon">
+              <img src="icons/estresse.png" alt="" width="32" height="32">
             </div>
-            <h3>Estresse e Insônia</h3>
-            <p>Protocolos que regulam o sistema nervoso autônomo, promovendo relaxamento profundo e sono restaurador.</p>
+            <h3>Estresse ou nervosismo?</h3>
+            <p>Protocolos que regulam o sistema nervoso autônomo, promovendo relaxamento profundo, sensação de bem-estar e sono restaurador.</p>
           </article>
         </div>
 
-        <div style="text-align:center; margin-top:44px;" class="fade-in">
+        <p class="services-cta-text fade-in">Se você sofre com algum desses problemas, a acupuntura pode ser a solução que você procura. Cada caso é único. Agende uma avaliação e descubra o melhor tratamento para você.</p>
+
+        <div class="services-cta-btns fade-in">
+          <a href="https://wa.me/5547992232316?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20agendar%20uma%20consulta%20de%20acupuntura." class="btn btn-primary" target="_blank" rel="noopener">Agendar consulta pelo WhatsApp</a>
           <a href="servicos.html" class="btn btn-outline">Ver todos os tratamentos</a>
         </div>
       </div>
@@ -234,148 +250,43 @@
         <div class="about-doc-inner">
           <div class="about-doc-image fade-in">
             <div class="about-doc-img-wrap">
-              <img src="img/dr-fabricio.jpg" alt="Dr. Fabrício Costa, acupunturista" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top center;">
+              <img src="img/sobre.jpg" alt="Dr. Fabrício Costa, acupunturista" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top center;">
             </div>
             <div class="about-doc-badge">
-              <strong>Pós-Grad.</strong>
+              <strong>Especialista</strong>
               <span>em Acupuntura</span>
             </div>
           </div>
 
           <div class="about-doc-content fade-in" data-delay="150">
-            <span class="tag">Sobre o médico</span>
+            <span class="tag">Sobre o profissional</span>
             <h2 id="doctor-title" style="color:#fff">Dr. Fabrício Costa</h2>
             <p style="color:rgba(255,255,255,.75);margin:16px 0 8px;">
-              Acupunturista com Formação Livre e Pós-Graduação em Acupuntura, especializado em tratamentos clínicos de alta performance e criador do <strong style="color:#fff">Método Balance Pro</strong>.
+              Fisioterapeuta acupunturista com mais de 20 anos de experiência clínica, especializado em pacientes que já tentaram diversos tratamentos sem encontrar solução para suas dores.
             </p>
             <p style="color:rgba(255,255,255,.75);margin:0 0 8px;">
-              Com mais de uma década de atuação, o Dr. Fabrício combina o conhecimento milenar da Medicina Tradicional Chinesa com protocolos modernos e científicos para entregar resultados reais aos seus pacientes.
+              Seu trabalho é focado em identificar a causa do problema e aplicar protocolos personalizados que proporcionam alívio desde as primeiras sessões.
+            </p>
+            <p style="color:rgba(255,255,255,.75);margin:0 0 8px;">
+              Criador do <strong style="color:#fff">Método Balance Pro</strong>, une a Medicina Tradicional Chinesa com abordagens modernas para entregar resultados reais e duradouros.
+            </p>
+            <p style="color:rgba(255,255,255,.75);margin:0 0 8px;">
+              Casado há 25 anos com Michelle, pai de Vinícius, Daniel e Gabriel.
             </p>
 
             <div class="credentials">
-              <div class="credential">
-                <div class="credential-dot"></div>
-                <div>
-                  <h4>Formação Livre em Acupuntura</h4>
-                  <p>Instituto Brasileiro de Acupuntura</p>
-                </div>
-              </div>
-              <div class="credential">
-                <div class="credential-dot"></div>
-                <div>
-                  <h4>Pós-Graduação em Acupuntura</h4>
-                  <p>Especialização clínica avançada</p>
-                </div>
-              </div>
-              <div class="credential">
-                <div class="credential-dot"></div>
-                <div>
-                  <h4>Criador do Método Balance Pro</h4>
-                  <p>Método próprio de tratamento e ensino</p>
-                </div>
-              </div>
-              <div class="credential">
-                <div class="credential-dot"></div>
-                <div>
-                  <h4>Mentor de Profissionais</h4>
-                  <p>Formação e mentoria para acupunturistas</p>
-                </div>
-              </div>
+              <div class="credential"><div class="credential-dot"></div><div><h4>Mais de 20 anos de experiência clínica</h4></div></div>
+              <div class="credential"><div class="credential-dot"></div><div><h4>Mais de 15 anos formando profissionais em acupuntura e MTC</h4></div></div>
+              <div class="credential"><div class="credential-dot"></div><div><h4>Mais de 15 mil pacientes atendidos</h4></div></div>
+              <div class="credential"><div class="credential-dot"></div><div><h4>Especialista em dores crônicas</h4></div></div>
+              <div class="credential"><div class="credential-dot"></div><div><h4>Criador do <a href="cursos.html" class="credential-link">Método Balance Pro</a></h4></div></div>
+              <div class="credential"><div class="credential-dot"></div><div><h4>Mentor de acupunturistas em todo o Brasil</h4></div></div>
+              <div class="credential"><div class="credential-dot"></div><div><h4>Diretor do <a href="cursos.html" class="credential-link">IBRATO</a> e coordenador da pós-graduação em Acupuntura e Técnicas Integrativas</h4></div></div>
+              <div class="credential"><div class="credential-dot"></div><div><h4>Atendimento personalizado para cada caso</h4></div></div>
             </div>
 
-            <a href="sobre.html" class="btn btn-white">Conhecer o Dr. Fabrício</a>
+            <a href="https://wa.me/5547992232316?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20agendar%20uma%20consulta%20de%20acupuntura." class="btn btn-white" target="_blank" rel="noopener">Conversar com o Dr. Fabrício</a>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Cursos & Mentoria -->
-    <section class="courses section" aria-labelledby="courses-title">
-      <div class="container">
-        <header class="section-header center fade-in">
-          <span class="tag">Formação</span>
-          <h2 id="courses-title">Cursos & Mentoria</h2>
-          <p>Quer aprender acupuntura ou aperfeiçoar sua prática? O Dr. Fabrício oferece formação e mentoria de alto nível.</p>
-        </header>
-
-        <div class="courses-grid">
-          <article class="course-card fade-in">
-            <div class="course-card-top">
-              <span class="course-tag">Curso</span>
-              <h3>Curso de Acupuntura</h3>
-              <p>Formação completa pelo Instituto Brasileiro de Acupuntura. Do básico ao avançado.</p>
-            </div>
-            <div class="course-card-body">
-              <div class="course-price">
-                <del>R$ 597,90</del>
-                <strong>R$ 349,90</strong>
-              </div>
-              <ul class="course-features">
-                <li class="course-feature">
-                  <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><polyline points="20 6 9 17 4 12"/></svg>
-                  Teoria da Medicina Tradicional Chinesa
-                </li>
-                <li class="course-feature">
-                  <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><polyline points="20 6 9 17 4 12"/></svg>
-                  Mapeamento dos pontos de acupuntura
-                </li>
-                <li class="course-feature">
-                  <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><polyline points="20 6 9 17 4 12"/></svg>
-                  Protocolos clínicos práticos
-                </li>
-                <li class="course-feature">
-                  <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><polyline points="20 6 9 17 4 12"/></svg>
-                  Certificado reconhecido
-                </li>
-              </ul>
-              <a href="https://wa.me/5547992232316?text=Olá%2C%20quero%20saber%20mais%20sobre%20o%20Curso%20de%20Acupuntura!" class="btn btn-primary" target="_blank" rel="noopener">
-                Quero me inscrever
-              </a>
-            </div>
-          </article>
-
-          <article class="course-card fade-in" data-delay="120">
-            <div class="course-card-top">
-              <span class="course-tag">Mentoria</span>
-              <h3>Mentoria Método Balance Pro</h3>
-              <p>Método avançado e extremamente eficaz para profissionais que buscam resultados diferenciados.</p>
-            </div>
-            <div class="course-card-body">
-              <div class="course-price">
-                <del>R$ 1.597,90</del>
-                <strong>R$ 997,90</strong>
-              </div>
-              <ul class="course-features">
-                <li class="course-feature">
-                  <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><polyline points="20 6 9 17 4 12"/></svg>
-                  Protocolo exclusivo do Dr. Fabrício
-                </li>
-                <li class="course-feature">
-                  <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><polyline points="20 6 9 17 4 12"/></svg>
-                  Acompanhamento personalizado
-                </li>
-                <li class="course-feature">
-                  <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><polyline points="20 6 9 17 4 12"/></svg>
-                  Casos clínicos ao vivo
-                </li>
-                <li class="course-feature">
-                  <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><polyline points="20 6 9 17 4 12"/></svg>
-                  Comunidade exclusiva de alunos
-                </li>
-                <li class="course-feature">
-                  <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><polyline points="20 6 9 17 4 12"/></svg>
-                  Suporte direto com o Dr. Fabrício
-                </li>
-              </ul>
-              <a href="https://wa.me/5547992232316?text=Olá%2C%20quero%20saber%20mais%20sobre%20a%20Mentoria%20Método%20Balance%20Pro!" class="btn btn-primary" target="_blank" rel="noopener">
-                Quero a Mentoria
-              </a>
-            </div>
-          </article>
-        </div>
-
-        <div style="text-align:center;margin-top:36px;" class="fade-in">
-          <a href="cursos.html" class="btn btn-outline">Ver detalhes dos cursos</a>
         </div>
       </div>
     </section>
@@ -385,78 +296,119 @@
       <div class="container">
         <header class="section-header center fade-in">
           <span class="tag">Depoimentos</span>
-          <h2 id="testimonials-title">O que dizem nossos pacientes</h2>
-          <p>Resultados reais de quem transformou a saúde com o Dr. Fabrício.</p>
+          <h2 id="testimonials-title">Quem tratou, recomenda!</h2>
+          <p>Depoimentos reais de pacientes que já tiveram a vida transformada.</p>
         </header>
-        <div class="testimonials-grid">
-          <article class="testimonial-card fade-in">
-            <div class="testimonial-stars" aria-label="5 estrelas">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <p>"Sofria com dor lombar há 3 anos. Depois de 5 sessões com o Dr. Fabrício, a melhora foi impressionante. Recomendo demais!"</p>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar" aria-hidden="true">MR</div>
-              <div>
-                <strong>Maria R.</strong>
-                <span>Dor lombar crônica</span>
-              </div>
-            </div>
-          </article>
+                <div class="gr-widget fade-in">
 
-          <article class="testimonial-card fade-in">
-            <div class="testimonial-stars" aria-label="5 estrelas">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <div class="gr-summary">
+            <div class="gr-summary-brand">
+              <span class="gr-google-wordmark" aria-label="Google"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span></span>
+              <span class="gr-brand-text">Avaliações</span>
             </div>
-            <p>"A ansiedade estava me consumindo. As sessões de acupuntura com o Dr. Fabrício mudaram minha vida. Durmo melhor, me sinto mais leve."</p>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar" aria-hidden="true">JS</div>
-              <div>
-                <strong>João S.</strong>
-                <span>Ansiedade e insônia</span>
-              </div>
+            <div class="gr-summary-score">
+              <span class="gr-rating-number">5.0</span>
+              <div class="gr-rating-stars" aria-label="5 estrelas"><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+              <span class="gr-rating-count">(62)</span>
             </div>
-          </article>
+          </div>
 
-          <article class="testimonial-card fade-in">
-            <div class="testimonial-stars" aria-label="5 estrelas">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <p>"Fasceíte plantar há 1 ano e meio. Fiz 6 sessões e a dor desapareceu. Profissional incrível, muito atencioso e competente."</p>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar" aria-hidden="true">AO</div>
-              <div>
-                <strong>Ana O.</strong>
-                <span>Fasceíte plantar</span>
+          <div class="gr-carousel">
+            <div class="gr-carousel-viewport">
+              <div class="gr-carousel-track">
+                <article class="gr-card">
+                  <div class="gr-card-header">
+                    <div class="gr-avatar" style="background:#4285F4">EM</div>
+                    <div class="gr-card-meta"><strong>Eduardo Matos Borges</strong><span>2 dias atrás</span></div>
+                    <svg class="gr-card-google" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                  </div>
+                  <div class="gr-card-stars" aria-label="5 estrelas"><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                  <p class="gr-card-text">"Estou fazendo tratamento com fisioterapia. Quando comecei, tinha muita dificuldade em calçar as meias. Após algumas sessões, essa dificuldade praticamente não existe mais."</p>
+                </article>
+                <article class="gr-card">
+                  <div class="gr-card-header">
+                    <div class="gr-avatar" style="background:#34A853">CC</div>
+                    <div class="gr-card-meta"><strong>Carol Carolina</strong><span>2 dias atrás</span></div>
+                    <svg class="gr-card-google" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                  </div>
+                  <div class="gr-card-stars" aria-label="5 estrelas"><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                  <p class="gr-card-text">"Fiz acupuntura com Dr. Fabrício e na primeira sessão me senti muito bem, estava travada e com bastante dor. No final da sessão de acupuntura e ventosa as dores sumiram."</p>
+                </article>
+                <article class="gr-card">
+                  <div class="gr-card-header">
+                    <div class="gr-avatar" style="background:#EA4335">CF</div>
+                    <div class="gr-card-meta"><strong>Christian Felipe</strong><span>2 semanas atrás</span></div>
+                    <svg class="gr-card-google" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                  </div>
+                  <div class="gr-card-stars" aria-label="5 estrelas"><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                  <p class="gr-card-text">"Excelente profissional. Estou tratando uma epicondilite lateral e tive uma melhora significativa desde o início do acompanhamento. Atendimento atencioso, explicações claras e tratamento bem direcionado. Recomendo."</p>
+                </article>
+                <article class="gr-card">
+                  <div class="gr-card-header">
+                    <div class="gr-avatar" style="background:#FBBC05">EG</div>
+                    <div class="gr-card-meta"><strong>Everson Garcia</strong><span>3 semanas atrás</span></div>
+                    <svg class="gr-card-google" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                  </div>
+                  <div class="gr-card-stars" aria-label="5 estrelas"><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                  <p class="gr-card-text">"Excelente atendimento, espaço super agradável, profissional de alto gabarito e muito conhecimento. Recomendo pra quem busca um profissional qualificado que apresenta muito resultado."</p>
+                </article>
+                <article class="gr-card">
+                  <div class="gr-card-header">
+                    <div class="gr-avatar" style="background:#4285F4">LO</div>
+                    <div class="gr-card-meta"><strong>Lucineia Oliveira</strong><span>1 mês atrás</span></div>
+                    <svg class="gr-card-google" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                  </div>
+                  <div class="gr-card-stars" aria-label="5 estrelas"><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                  <p class="gr-card-text">"Profissional extremamente competente com muito conhecimento. A recuperação está sendo rápida e segura. Com certeza a melhor escolha para quem busca fisioterapia de qualidade!"</p>
+                </article>
+                <article class="gr-card">
+                  <div class="gr-card-header">
+                    <div class="gr-avatar" style="background:#34A853">LA</div>
+                    <div class="gr-card-meta"><strong>Liliane Adolfo</strong><span>1 mês atrás</span></div>
+                    <svg class="gr-card-google" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                  </div>
+                  <div class="gr-card-stars" aria-label="5 estrelas"><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                  <p class="gr-card-text">"Foi fantástico, os resultados foram de imediato, fiquei impressionada com o alívio das dores. Gostei muito, super indico!"</p>
+                </article>
+                <article class="gr-card">
+                  <div class="gr-card-header">
+                    <div class="gr-avatar" style="background:#EA4335">GO</div>
+                    <div class="gr-card-meta"><strong>Guilherme Ohlweiler</strong><span>3 meses atrás</span></div>
+                    <svg class="gr-card-google" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                  </div>
+                  <div class="gr-card-stars" aria-label="5 estrelas"><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#F59E0B" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                  <p class="gr-card-text">"Dr. Fabrício é fantástico, precisei de fisioterapia após uma fratura cominutiva de patela, cheguei para a avaliação sem conseguir dobrar a perna e saí de lá andando praticamente normal. A acupuntura também ajudou bastante no tratamento."</p>
+                </article>
               </div>
             </div>
-          </article>
+
+            <div class="gr-carousel-controls">
+              <button class="gr-carousel-btn gr-prev" aria-label="Depoimento anterior">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="15 18 9 12 15 6"/></svg>
+              </button>
+              <div class="gr-carousel-dots"></div>
+              <button class="gr-carousel-btn gr-next" aria-label="Próximo depoimento">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
+          </div>
+
         </div>
+
       </div>
     </section>
 
     <!-- CTA Banner -->
     <section class="cta-banner" aria-labelledby="cta-title">
       <div class="container">
-        <h2 id="cta-title" class="fade-in">Pronto para transformar sua saúde?</h2>
+        <h2 id="cta-title" class="fade-in">Se funcionou para eles,<br>pode funcionar para você também</h2>
         <p class="fade-in" data-delay="80">
-          Agende sua consulta agora e descubra como a acupuntura pode mudar a sua vida. Atendimento personalizado em Brusque/SC.
+          Agende sua consulta e descubra o tratamento certo para a sua dor. Atendimento personalizado em Brusque/SC.
         </p>
         <div class="cta-banner-actions fade-in" data-delay="160">
           <a href="https://wa.me/5547992232316?text=Olá%2C%20vim%20pelo%20site%20e%20quero%20agendar%20uma%20consulta!" class="btn btn-white btn-lg" target="_blank" rel="noopener">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Falar no WhatsApp
+            Agendar consulta pelo WhatsApp
           </a>
           <a href="contato.html" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff;">Ver outras formas de contato</a>
         </div>
@@ -471,9 +423,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="nav-logo" style="margin-bottom:0;" aria-label="Dr. Fabrício Costa, Início">
-            <div class="nav-logo-text">
-              <strong style="color:#fff;">Dr. Fabrício Costa</strong>
-            </div>
+            <img src="img/logo.png" alt="Dr. Fabrício Costa" class="nav-logo-img">
           </a>
           <p>Tratamentos com acupuntura para aliviar a dor, reduzir o estresse e restaurar o equilíbrio do seu corpo.</p>
           <div class="footer-social">
@@ -493,6 +443,7 @@
             <li><a href="sobre.html">Sobre o Dr. Fabrício</a></li>
             <li><a href="servicos.html">Serviços</a></li>
             <li><a href="cursos.html">Cursos & Mentoria</a></li>
+            <li><a href="faq.html">FAQ</a></li>
             <li><a href="contato.html">Contato</a></li>
           </ul>
         </div>
@@ -513,11 +464,11 @@
           <address class="footer-contact" style="font-style:normal;">
             <div class="footer-contact-item">
               <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              <span>(47) 99223-2316</span>
+              <span>(47) 99223-2316<br>(47) 99161-1766 (Clínica)</span>
             </div>
             <div class="footer-contact-item">
               <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span>R. Maximiliano Furbringer, 202<br>Jardim Maluche, Brusque/SC</span>
+              <span>R. Sete de Setembro, 585 - Sala 04<br>Clínica Médica Santa Rita<br>Santa Rita, Brusque/SC</span>
             </div>
             <div class="footer-contact-item">
               <svg viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -529,7 +480,7 @@
 
       <div class="footer-bottom">
         <p>&copy; 2026 Dr. Fabrício Costa. Todos os direitos reservados.</p>
-        <p>Desenvolvido por <a href="#" target="_blank" rel="noopener">Sano Lab</a></p>
+        <p>Desenvolvido por <a href="https://sanolab.com.br" target="_blank" rel="noopener">Sano Lab</a></p>
       </div>
     </div>
   </footer>
