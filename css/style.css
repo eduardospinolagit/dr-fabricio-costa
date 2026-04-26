@@ -1290,7 +1290,7 @@ p  { font-size: 1rem; color: var(--gray-dark); line-height: 1.75; }
   }
   .nav-mobile a:hover,
   .nav-mobile a.active { color: var(--red); background: var(--red-light); }
-  .nav-mobile .btn   { margin-top: 8px; justify-content: center; width: 100%; }
+  .nav-mobile .btn   { margin-top: 8px; justify-content: center; width: 100%; color: var(--white); }
 
   .hero {
     grid-template-columns: 1fr;
