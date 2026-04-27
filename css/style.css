@@ -1024,7 +1024,7 @@ p  { font-size: 1rem; color: var(--gray-dark); line-height: 1.75; }
 .metodo-balance .tag { background: rgba(255,255,255,.2); color: var(--white); }
 .metodo-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 28px;
   margin-top: 48px;
 }
@@ -1051,6 +1051,73 @@ p  { font-size: 1rem; color: var(--gray-dark); line-height: 1.75; }
 .metodo-card-icon svg { width: 26px; height: 26px; stroke: var(--white); fill: none; }
 .metodo-card h4 { color: var(--white); margin-bottom: 8px; font-size: 1rem; }
 .metodo-card p  { color: rgba(255,255,255,.75); font-size: .88rem; margin: 0; }
+.metodo-card--hero {
+  grid-column: 1 / -1;
+  background: var(--white);
+  border-color: transparent;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.metodo-card--hero .metodo-card-icon {
+  background: var(--red);
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  margin: 0;
+}
+.metodo-card--hero .metodo-card-icon svg { width: 32px; height: 32px; }
+.metodo-card--hero h4 { color: var(--red); font-size: 1.25rem; margin-bottom: 10px; }
+.metodo-card--hero p  { color: var(--gray-dark); font-size: 1rem; line-height: 1.65; margin: 0; }
+.metodo-card--hero:hover { background: var(--white); }
+.metodo-aprender {
+  margin-top: 48px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: var(--radius-lg);
+  padding: 36px 40px;
+}
+.metodo-aprender-title {
+  color: var(--white);
+  font-family: var(--ff-head);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.metodo-aprender-list {
+  list-style: none;
+  padding: 0; margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 32px;
+}
+.metodo-aprender-list li {
+  color: rgba(255,255,255,.9);
+  font-size: .95rem;
+  line-height: 1.5;
+  padding-left: 28px;
+  position: relative;
+}
+.metodo-aprender-list li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 3px;
+  transform: none;
+  width: 18px; height: 18px;
+  background: var(--red-dark);
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-size: 11px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (max-width: 640px) {
+  .metodo-aprender { padding: 28px 20px; }
+  .metodo-aprender-list { grid-template-columns: 1fr; }
+}
 
 /* ── Serviços page — lista detalhada ── */
 .service-detail {
@@ -1420,6 +1487,8 @@ p  { font-size: 1rem; color: var(--gray-dark); line-height: 1.75; }
   .footer-bottom { flex-direction: column; text-align: center; }
 
   .metodo-grid { grid-template-columns: 1fr; }
+  .metodo-card--hero { flex-direction: column; align-items: flex-start; }
+  .metodo-card--hero .metodo-card-icon { margin: 0 0 8px; }
   .form-grid-2 { grid-template-columns: 1fr; }
 
 
