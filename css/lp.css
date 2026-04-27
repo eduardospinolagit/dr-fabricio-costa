@@ -337,6 +337,47 @@ strong { font-weight: 700; }
 .lp-pain-cta p { color: var(--red-dark); font-size: 1rem; }
 
 /* ── Método ── */
+.lp-social-proof { background: var(--dark); }
+.lp-videos-grid {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.lp-video-wrap {
+  width: 320px;
+  aspect-ratio: 9 / 16;
+  background: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+.lp-video-wrap video,
+.lp-video-wrap iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: 0;
+}
+.lp-video-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a1a1a;
+}
+.lp-video-placeholder svg {
+  width: 48px;
+  height: 48px;
+  opacity: .3;
+  stroke: #fff;
+}
+@media (max-width: 720px) {
+  .lp-video-wrap { width: min(300px, 82vw); }
+}
 .lp-method { background: var(--white); }
 .lp-pillars {
   display: grid;
@@ -383,12 +424,28 @@ strong { font-weight: 700; }
 .lp-curriculum { background: var(--dark); }
 .lp-curriculum .lp-section-header h2 { color: var(--white); }
 .lp-curriculum .lp-section-header p { color: rgba(255,255,255,.7); }
-.lp-curr-list {
+.lp-social-proof .lp-section-header h2 { color: var(--white); }
+.lp-social-proof .lp-section-header p { color: rgba(255,255,255,.7); }
+.lp-curr-dual {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px 40px;
-  max-width: 860px;
-  margin: 0 auto 48px;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 960px;
+  margin: 0 auto 36px;
+}
+.lp-curr-col h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,.15);
+}
+.lp-curr-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
 }
 .lp-curr-list li {
   display: flex;
@@ -581,14 +638,23 @@ strong { font-weight: 700; }
 .lp-price-card-top p { font-size: .9rem; color: var(--gray); }
 .lp-price-card-featured .lp-price-card-top p { color: rgba(255,255,255,.8); }
 .lp-price-card-body { padding: 28px; }
+.lp-promo-banner { display:flex; align-items:center; gap:8px; flex-wrap:wrap; background:#fff8ee; border:1px solid #f5a623; border-radius:6px; padding:8px 12px; margin-bottom:16px; }
+.lp-promo-label { font-size:.78rem; font-weight:600; color:#7a4800; }
+.lp-countdown { font-family:monospace; font-size:.9rem; font-weight:800; color:#c84b00; letter-spacing:.04em; }
 .lp-price {
   display: flex;
-  align-items: baseline;
-  gap: 12px;
+  flex-direction: column;
+  gap: 4px;
   margin-bottom: 24px;
 }
-.lp-price del { font-size: .95rem; color: var(--gray); text-decoration: line-through; }
-.lp-price strong { font-family: var(--ff-head); font-size: 2rem; font-weight: 900; color: var(--red); }
+.lp-price-label { font-size:.78rem; color:var(--gray); text-transform:uppercase; letter-spacing:.06em; margin:0; }
+.lp-price-hero-row { display:flex; align-items:baseline; gap:6px; line-height:1; }
+.lp-price-parcels { font-family:var(--ff-head); font-size:1.3rem; font-weight:700; color:var(--red); }
+.lp-price-hero-row strong { font-family: var(--ff-head); font-size: 2.6rem; font-weight: 900; color: var(--red); }
+.lp-price-sub { font-size:.82rem; color:var(--gray-dark); margin:2px 0 0; }
+.lp-price-sub strong { font-weight:700; color:var(--gray-dark); }
+.lp-price-small { font-size:.82rem; color:var(--gray); margin:0; }
+
 .lp-price-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
 .lp-price-list li {
   display: flex;
@@ -832,6 +898,7 @@ strong { font-weight: 700; }
   .lp-hero-stats { flex-wrap: wrap; gap: 16px; }
   .lp-pain-grid { grid-template-columns: 1fr; }
   .lp-pillars { grid-template-columns: 1fr; }
+  .lp-curr-dual { grid-template-columns: 1fr; }
   .lp-curr-list { grid-template-columns: 1fr; }
   .lp-forwhom-grid { grid-template-columns: 1fr; }
   .lp-mentor-inner { grid-template-columns: 1fr; }

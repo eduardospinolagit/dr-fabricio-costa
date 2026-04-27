@@ -44,3 +44,27 @@ if ('IntersectionObserver' in window && !prefersReducedMotion) {
 }
 
 document.addEventListener('scroll', () => {}, { passive: true });
+
+/* ── Contador regressivo de oferta ── */
+(function () {
+  var els = document.querySelectorAll('.lp-countdown');
+  if (!els.length) return;
+  var KEY = 'promo-oferta-end';
+  var HORAS = 48;
+  var end = parseInt(localStorage.getItem(KEY) || '0');
+  if (!end || end < Date.now()) {
+    end = Date.now() + HORAS * 3600000;
+    localStorage.setItem(KEY, end);
+  }
+  function pad(n) { return String(n).padStart(2, '0'); }
+  function tick() {
+    var rem = Math.max(0, end - Date.now());
+    var h = Math.floor(rem / 3600000);
+    var m = Math.floor((rem % 3600000) / 60000);
+    var s = Math.floor((rem % 60000) / 1000);
+    var str = pad(h) + ':' + pad(m) + ':' + pad(s);
+    els.forEach(function (el) { el.textContent = str; });
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
