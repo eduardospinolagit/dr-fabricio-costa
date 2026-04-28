@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/inicio", "destination": "/index.html" }
+  ],
+  "redirects": [
+    { "source": "/index.html", "destination": "/inicio", "permanent": true }
+  ]
+}

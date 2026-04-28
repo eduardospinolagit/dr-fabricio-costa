@@ -542,6 +542,7 @@ p  { font-size: 1rem; color: var(--gray-dark); line-height: 1.75; }
   content: '';
   position: absolute;
   inset: 0;
+  border-radius: inherit;
   background: var(--red);
   mix-blend-mode: lighten;
   pointer-events: none;
@@ -1595,9 +1596,15 @@ p  { font-size: 1rem; color: var(--gray-dark); line-height: 1.75; }
   background: var(--red-light);
   border-radius: var(--radius-md);
   display: flex; align-items: center; justify-content: center;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
 }
 .srv-card-icon svg { width: 22px; height: 22px; stroke: var(--red); }
-.srv-card-icon img { width: 28px; height: 28px; object-fit: contain; filter: brightness(0) saturate(100%) invert(13%) sepia(85%) saturate(2800%) hue-rotate(337deg) brightness(82%); }
+.srv-card-icon img {
+  width: 28px; height: 28px; object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(14%) sepia(94%) saturate(4500%) hue-rotate(340deg) brightness(89%);
+}
 .srv-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--dark); margin: 0; }
 .srv-card p  { font-size: .88rem; color: var(--gray); line-height: 1.65; margin: 0; }
 @media (max-width: 1024px) {
