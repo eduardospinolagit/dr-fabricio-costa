@@ -1091,6 +1091,23 @@ p  { font-size: 1rem; color: var(--gray-dark); line-height: 1.75; }
 .metodo-card--hero h4 { color: var(--red); font-size: 1.25rem; margin-bottom: 10px; }
 .metodo-card--hero p  { color: var(--gray-dark); font-size: 1rem; line-height: 1.65; margin: 0; }
 .metodo-card--hero:hover { background: var(--white); }
+
+/* ── Variante light para metodo-grid em fundo branco ── */
+.metodo-grid--light .metodo-card {
+  background: var(--off-white);
+  border-color: var(--border);
+}
+.metodo-grid--light .metodo-card:hover { background: var(--gray-light); }
+.metodo-grid--light .metodo-card-icon {
+  background: var(--red-light);
+}
+.metodo-grid--light .metodo-card-icon svg { stroke: var(--red); }
+.metodo-grid--light .metodo-card h4 { color: var(--dark); }
+.metodo-grid--light .metodo-card p  { color: var(--gray); }
+.metodo-grid--light .metodo-card--hero { background: var(--white); border-color: var(--border); }
+.metodo-grid--light .metodo-card--hero .metodo-card-icon { background: var(--red); }
+.metodo-grid--light .metodo-card--hero .metodo-card-icon svg { stroke: var(--white); }
+
 .metodo-aprender {
   margin-top: 48px;
   background: rgba(255,255,255,.08);
