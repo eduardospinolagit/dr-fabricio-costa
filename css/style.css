@@ -532,9 +532,20 @@ p  { font-size: 1rem; color: var(--gray-dark); line-height: 1.75; }
   border-radius: var(--radius-md);
   display: flex; align-items: center; justify-content: center;
   margin-bottom: 20px;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
 }
 .service-card-icon svg { width: 32px; height: 32px; stroke: var(--red); fill: none; }
 .service-card-icon img { width: 32px; height: 32px; object-fit: contain; mix-blend-mode: multiply; }
+.service-card-icon::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--red);
+  mix-blend-mode: lighten;
+  pointer-events: none;
+}
 .service-card h3 { margin-bottom: 10px; font-size: 1.1rem; }
 .service-card p  { font-size: .9rem; margin: 0; }
 .services-cta-text { text-align: center; max-width: 600px; margin: 44px auto 0; font-size: 1rem; color: var(--gray-dark); line-height: 1.7; }
