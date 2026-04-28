@@ -1092,6 +1092,18 @@ p  { font-size: 1rem; color: var(--gray-dark); line-height: 1.75; }
 .metodo-card--hero p  { color: var(--gray-dark); font-size: 1rem; line-height: 1.65; margin: 0; }
 .metodo-card--hero:hover { background: var(--white); }
 
+/* ── Card branco de destaque dentro de seção escura ── */
+.metodo-card--white {
+  background: var(--white);
+  border-color: transparent;
+  backdrop-filter: none;
+}
+.metodo-card--white .metodo-card-icon { background: var(--red); }
+.metodo-card--white .metodo-card-icon svg { stroke: var(--white); }
+.metodo-card--white h4 { color: var(--red); }
+.metodo-card--white p  { color: var(--gray-dark); }
+.metodo-card--white:hover { background: var(--off-white); }
+
 /* ── Variante light para metodo-grid em fundo branco ── */
 .metodo-grid--light .metodo-card {
   background: var(--off-white);
@@ -1107,6 +1119,218 @@ p  { font-size: 1rem; color: var(--gray-dark); line-height: 1.75; }
 .metodo-grid--light .metodo-card--hero { background: var(--white); border-color: var(--border); }
 .metodo-grid--light .metodo-card--hero .metodo-card-icon { background: var(--red); }
 .metodo-grid--light .metodo-card--hero .metodo-card-icon svg { stroke: var(--white); }
+.metodo-grid--light .metodo-card--hero h4 { color: var(--red); }
+.metodo-grid--light .metodo-card--hero p  { color: var(--gray-dark); }
+
+.metodo-check-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.metodo-check-list li {
+  font-size: .88rem;
+  color: var(--gray);
+  padding-left: 22px;
+  position: relative;
+  line-height: 1.5;
+}
+.metodo-check-list li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: var(--red);
+  font-size: .8rem;
+}
+
+/* ── Competências IBRATO (fundo claro) ── */
+.ibrato-competencias {
+  background: var(--off-white);
+  border-color: var(--border);
+}
+.ibrato-competencias .metodo-aprender-title {
+  color: var(--dark);
+}
+.ibrato-comp-list {
+  list-style: none;
+  padding: 0; margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.ibrato-comp-list li {
+  color: var(--gray-dark);
+  font-size: .95rem;
+  line-height: 1.6;
+  padding-left: 28px;
+  position: relative;
+}
+.ibrato-comp-list li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 3px;
+  width: 18px; height: 18px;
+  background: var(--red);
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 11px 11px;
+  background-position: center;
+}
+.ibrato-comp-list strong {
+  color: var(--dark);
+}
+
+.ibrato-competencias .metodo-aprender-list {
+  grid-template-columns: 1fr;
+}
+.ibrato-competencias .metodo-aprender-list li {
+  color: var(--gray-dark);
+}
+.ibrato-competencias .metodo-aprender-list li::before {
+  background: var(--red);
+}
+
+/* ── Seção Curso de Acupuntura ── */
+.curso-subtitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--red);
+  letter-spacing: .02em;
+  margin-top: -4px;
+}
+
+.curso-stats-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 48px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.curso-stat {
+  padding: 28px 16px;
+  text-align: center;
+  border-right: 1px solid var(--border);
+}
+.curso-stat:last-child { border-right: none; }
+.curso-stat-value {
+  display: block;
+  font-family: var(--ff-head);
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: var(--red);
+  line-height: 1;
+}
+.curso-stat-label {
+  display: block;
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--gray);
+  margin-top: 6px;
+}
+
+.curso-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+  align-items: start;
+}
+.curso-block-title {
+  font-family: var(--ff-head);
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--dark);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-bottom: 20px;
+}
+
+.curso-curriculum-wrap {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+}
+.curso-curriculum-list {
+  list-style: none;
+  padding: 0; margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.curso-curriculum-list li {
+  font-size: .9rem;
+  color: var(--gray-dark);
+  padding-left: 26px;
+  position: relative;
+  line-height: 1.5;
+}
+.curso-curriculum-list li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 3px;
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: var(--red);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+}
+
+.curso-info-sidebar {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.curso-info-dl { margin: 0; }
+.curso-info-row {
+  padding: 18px 28px;
+  border-bottom: 1px solid var(--border);
+}
+.curso-info-row:last-child { border-bottom: none; }
+.curso-info-row dt {
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  color: var(--red);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.curso-info-row dd {
+  font-size: .88rem;
+  color: var(--gray-dark);
+  line-height: 1.6;
+  margin: 0;
+}
+.curso-info-row--bonus {
+  background: var(--red-light);
+}
+.curso-info-row--bonus dt { color: var(--red-dark, var(--red)); }
+.curso-info-row--bonus dd { color: var(--dark); font-weight: 500; }
+
+.curso-resultado {
+  margin-top: 24px;
+  background: var(--red);
+  border-radius: var(--radius-lg);
+  padding: 22px 32px;
+  text-align: center;
+}
+.curso-resultado p {
+  color: var(--white);
+  font-size: .95rem;
+  margin: 0;
+  line-height: 1.6;
+}
+.curso-resultado strong { font-weight: 700; }
 
 .metodo-aprender {
   margin-top: 48px;
@@ -1127,9 +1351,8 @@ p  { font-size: 1rem; color: var(--gray-dark); line-height: 1.75; }
 .metodo-aprender-list {
   list-style: none;
   padding: 0; margin: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px 32px;
+  columns: 2;
+  column-gap: 32px;
 }
 .metodo-aprender-list li {
   color: rgba(255,255,255,.9);
@@ -1137,7 +1360,10 @@ p  { font-size: 1rem; color: var(--gray-dark); line-height: 1.75; }
   line-height: 1.5;
   padding-left: 28px;
   position: relative;
+  break-inside: avoid;
+  margin-bottom: 14px;
 }
+.metodo-aprender-list li:last-child { margin-bottom: 0; }
 .metodo-aprender-list li::before {
   content: '';
   position: absolute;
@@ -1427,6 +1653,11 @@ p  { font-size: 1rem; color: var(--gray-dark); line-height: 1.75; }
   .about-bio-sticky { position: static; }
   .about-bio-img { max-width: 440px; margin: 0 auto; }
   .courses-hero-cards { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .curso-stats-bar { grid-template-columns: repeat(2, 1fr); }
+  .curso-main { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
