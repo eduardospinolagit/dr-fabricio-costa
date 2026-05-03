@@ -1,6 +1,7 @@
 {
   "rewrites": [
-    { "source": "/inicio", "destination": "/index.html" }
+    { "source": "/inicio", "destination": "/index.html" },
+    { "source": "/favicon.ico", "destination": "/img/favicon.png" }
   ],
   "redirects": [
     { "source": "/index.html", "destination": "/inicio", "permanent": true }
